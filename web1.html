@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame Layout</title>
+</head>
+<!-- Atur tinggi row agar sesuai dengan nav -->
+<frameset rows="100px,100px,*,55px" border="1">
+    <!-- Header -->
+    <frame src="header.html" name="header" scrolling="no" noresize>
+
+    <!-- Navigation -->
+    <frame src="navigation.html" name="nav" scrolling="no" noresize>
+
+    <!-- Content area: left - main - right -->
+    <frameset cols="20%,60%,20%">
+        <frame src="left.html" name="left">
+        <frame src="main.html" name="main">
+        <frame src="right.html" name="right">
+    </frameset>
+
+    <!-- Footer -->
+    <frame src="footer.html" name="footer" scrolling="no" noresize>
+</frameset>
+</html>
